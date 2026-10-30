@@ -1,0 +1,117 @@
+---
+// Benefits.astro
+import { 
+  Percent, 
+  Database, 
+  Zap, 
+  Send, 
+  Smartphone, 
+  Headphones, 
+  ShieldCheck, 
+  TrendingUp, 
+  Sparkles, 
+  CheckCircle2 
+} from 'lucide-astro';
+---
+
+<section id="benefit" class="section container">
+  <div class="section-header">
+    <div class="section-tag">Nilai Tambah Nyata</div>
+    <h2 class="section-title">Mengapa Puluhan UMKM Beralih ke Ekosistem Mandiri Aksara?</h2>
+    <p class="section-description">
+      Kami tidak sekadar membuat website, kami merekayasa infrastruktur digital mandiri yang melindungi margin keuntungan dan memperkuat kedaulatan bisnis Anda.
+    </p>
+  </div>
+
+  <div class="benefit-grid">
+    <!-- Benefit Card 1 -->
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#ecfdf5; color:#10b981;">
+        <Percent size={24} stroke-width={2.2} />
+      </div>
+      <h4>Bebas Komisi Fee 100%</h4>
+      <p>
+        Hentikan kebocoran profit 10% s.d. 20% ke platform perantara. Setiap rupiah dari hasil jerih payah penjualan masuk seutuhnya ke rekening usaha Anda.
+      </p>
+      <div class="benefit-pill-stat">
+        <TrendingUp size={13} />
+        <span>Margin profit meningkat hingga 25%</span>
+      </div>
+    </div>
+
+    <!-- Benefit Card 2 -->
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:var(--bg-pill); color:var(--gold-dark);">
+        <Database size={24} stroke-width={2.2} />
+      </div>
+      <h4>Kedaulatan Data Pelanggan</h4>
+      <p>
+        Database kontak pelanggan, histori order, dan pola pembelian tersimpan langsung di WhatsApp Anda. Aset berharga untuk promosi dan repeat order tanpa terikat pihak ketiga.
+      </p>
+      <div class="benefit-pill-stat">
+        <ShieldCheck size={13} />
+        <span>Kontak WhatsApp milik Anda seutuhnya</span>
+      </div>
+    </div>
+
+    <!-- Benefit Card 3 -->
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:var(--steel-subtle); color:var(--steel-primary);">
+        <Zap size={24} stroke-width={2.2} />
+      </div>
+      <h4>Kecepatan Buka &lt; 1 Detik</h4>
+      <p>
+        Dibangun dengan arsitektur Astro SSG yang ultra-ringan. Pelanggan tidak perlu mendownload aplikasi berat, katalog langsung terbuka seketika di ponsel walau sinyal lemah.
+      </p>
+      <div class="benefit-pill-stat">
+        <Sparkles size={13} />
+        <span>Tanpa bounce rate akibat web lelet</span>
+      </div>
+    </div>
+
+    <!-- Benefit Card 4 -->
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#fef3c7; color:#d97706;">
+        <Send size={24} stroke-width={2.2} />
+      </div>
+      <h4>Format Order WA Otomatis</h4>
+      <p>
+        Pelanggan memilih varian produk, ongkir terhitung otomatis, dan format nota terstruktur langsung terkirim ke WhatsApp admin. Bebas salah catat pesanan.
+      </p>
+      <div class="benefit-pill-stat">
+        <CheckCircle2 size={13} />
+        <span>Pesanan rapi siap diproses kasir</span>
+      </div>
+    </div>
+
+    <!-- Benefit Card 5 -->
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#e0e7ff; color:#4f46e5;">
+        <Smartphone size={24} stroke-width={2.2} />
+      </div>
+      <h4>Fleksibel di Gadget Apapun</h4>
+      <p>
+        Bisa dijalankan dari smartphone kasir, tablet Android, iPad, maupun laptop yang sudah Anda miliki. Mendukung cetak struk via printer thermal Bluetooth.
+      </p>
+      <div class="benefit-pill-stat">
+        <ShieldCheck size={13} />
+        <span>Tanpa investasi hardware komputer mahal</span>
+      </div>
+    </div>
+
+    <!-- Benefit Card 6 -->
+    <div class="benefit-card">
+      <div class="benefit-icon-wrap" style="background:#fdf2f8; color:#db2777;">
+        <Headphones size={24} stroke-width={2.2} />
+      </div>
+      <h4>Pendampingan Hingga Mahir</h4>
+      <p>
+        Kami tidak pernah meninggalkan Anda dengan kode rumit. Disediakan sesi pelatihan staf langsung, video tutorial eksklusif, dan grup support WhatsApp khusus.
+      </p>
+      <div class="benefit-pill-stat">
+        <Sparkles size={13} />
+        <span>Garansi teknis &amp; konsultasi berkala</span>
+      </div>
+    </div>
+  </div>
+</section>

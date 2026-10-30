@@ -1,34 +1,96 @@
 ---
 // Footer.astro
+import { ArrowRight, MessageSquare, Mail, MapPin, Handshake } from 'lucide-astro';
 ---
 
-<footer class="footer-cta">
+<footer class="footer-clean">
   <div class="container">
-    <div class="hero-pill" style="margin-bottom:24px;">
-      <span class="hero-pill-indicator"></span>
-      <span class="hero-pill-text">Siap Membantu Bisnis Anda Hari Ini</span>
+    <!-- High-Impact Navy CTA Banner (Partnership & Collaboration Focus) -->
+    <div class="cta-banner">
+      <h2 class="cta-title">
+        Mari Bermitra untuk Membantu <br>
+        <span>Lebih Banyak UMKM Indonesia Naik Kelas</span>
+      </h2>
+      <p class="cta-desc">
+        Diskusikan potensi kolaborasi kemitraan, implementasi digitalisasi bisnis mandiri, atau program pembinaan komunitas Anda bersama tim Aksara Inovatif hari ini.
+      </p>
+      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        <a href="https://wa.me/6281234567890?text=Halo%20Aksara%20Inovatif,%20saya%20tertarik%20untuk%20diskusi%20kemitraan%20dan%20kolaborasi%20digitalisasi%20UMKM" target="_blank" class="btn-primary magnetic-btn" data-cursor="KOLABORASI">
+          <Handshake size={18} />
+          <span>Diskusikan Kemitraan via WhatsApp</span>
+          <ArrowRight size={18} stroke-width={2.2} />
+        </a>
+        <a href="#kemitraan" class="btn-secondary magnetic-btn" data-cursor="SKEMA">
+          <span>Lihat Skema Kerjasama</span>
+        </a>
+      </div>
     </div>
 
-    <h2 class="footer-giant-text">
-      Punya Usaha yang Siap <br>
-      <span class="highlight-gold">Naik Kelas</span> Bersama Kami?
-    </h2>
+    <!-- 4-Column Modern Clean Footer -->
+    <div class="footer-top">
+      <div>
+        <div class="brand" style="margin-bottom:12px; display:flex; align-items:center; gap:10px;">
+          <img src="/assets/Logo-AD-Transparan.png" alt="Aksara Developer Logo" class="brand-logo-img" />
+          <div class="brand-name">AKSARA INOVATIF</div>
+        </div>
+        <p class="footer-brand-desc">
+          Mitra rekayasa solusi digital mandiri dan kolaborasi strategis khusus Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia. Cepat, berdampak nyata, dan bebas potongan komisi selamanya.
+        </p>
+      </div>
 
-    <div class="footer-btn-wrap">
-      <a href="https://wa.me/6281234567890?text=Halo%20Aksara%20Inovatif,%20saya%20ingin%20jadwalkan%20diskusi%20kebutuhan%20digital%20usaha%20saya" target="_blank" class="btn-primary magnetic-btn" style="padding:22px 48px; font-size:18px;" data-cursor="CHAT SEKARANG">
-        <span>Diskusi Santai via WhatsApp</span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
+      <div class="footer-col">
+        <h5>Solusi Ekosistem</h5>
+        <ul class="footer-links">
+          <li><a href="#solusi">Katalog WhatsApp Mandiri</a></li>
+          <li><a href="#solusi">Aplikasi Kasir (POS) Cloud</a></li>
+          <li><a href="#solusi">Company Profile &amp; Local SEO</a></li>
+          <li><a href="#solusi">Sistem Operasional Kustom</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Kemitraan &amp; Manfaat</h5>
+        <ul class="footer-links">
+          <li><a href="#benefit">Nilai Tambah &amp; Benefit UMKM</a></li>
+          <li><a href="#kemitraan">Mitra Komunitas &amp; Asosiasi</a></li>
+          <li><a href="#kemitraan">Mitra Brand Owner &amp; Bisnis</a></li>
+          <li><a href="#kemitraan">Mitra Agensi &amp; Reseller</a></li>
+          <li><a href="#perbandingan">Keunggulan Sistem Mandiri</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Kontak Kemitraan</h5>
+        <ul class="footer-links">
+          <li>
+            <a href="https://wa.me/6281234567890" target="_blank" style="display:inline-flex; align-items:center; gap:8px;">
+              <MessageSquare size={14} color="var(--wa-green)" />
+              <span>WhatsApp: +62 812-3456-7890</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mitra@aksarainovatif.id" style="display:inline-flex; align-items:center; gap:8px;">
+              <Mail size={14} color="var(--steel-primary)" />
+              <span>Email: mitra@aksarainovatif.id</span>
+            </a>
+          </li>
+          <li>
+            <span style="color:var(--text-body); font-size:14px; display:inline-flex; align-items:center; gap:8px;">
+              <MapPin size={14} color="var(--gold-dark)" />
+              <span>Surabaya &bull; Jakarta &bull; Seluruh Indonesia</span>
+            </span>
+          </li>
+        </ul>
+      </div>
     </div>
 
+    <!-- Bottom Copyright -->
     <div class="footer-bottom">
       <div>
-        © 2026 <strong>Aksara Inovatif</strong>. Solusi Rekayasa Digital UMKM Indonesia.
+        &copy; 2026 <strong>Aksara Inovatif</strong>. Seluruh Hak Cipta Dilindungi Undang-Undang.
       </div>
-      <div style="display:flex; gap:20px;">
-        <a href="#solusi" class="rolling-text"><span>Layanan</span><span>Layanan</span></a>
-        <a href="#showroom" class="rolling-text"><span>Showroom</span><span>Showroom</span></a>
-        <a href="#kalkulator" class="rolling-text"><span>Kalkulator</span><span>Kalkulator</span></a>
+      <div>
+        Sinergi Kemitraan Mandiri Memajukan UMKM Indonesia Menuju Masa Depan Digital.
       </div>
     </div>
   </div>

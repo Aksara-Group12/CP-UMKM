@@ -1,48 +1,188 @@
 ---
 // Hero.astro
+import { 
+  ArrowRight, 
+  Play, 
+  TrendingUp, 
+  CheckCircle2, 
+  ShoppingBag, 
+  Receipt, 
+  Users, 
+  UtensilsCrossed, 
+  Shirt, 
+  Store, 
+  Wrench, 
+  Truck,
+  Sparkles,
+  Handshake
+} from 'lucide-astro';
 ---
 
 <section class="hero container">
+  <!-- Trust Pill -->
   <div class="hero-pill">
     <span class="hero-pill-indicator"></span>
-    <span class="hero-pill-text">Mitra Teknologi Mandiri untuk 50+ UMKM di Indonesia</span>
+    <span class="hero-pill-text">Mitra Solusi Rekayasa Digital &amp; Kemitraan untuk 50+ UMKM Indonesia</span>
   </div>
 
+  <!-- Hero Main Headline -->
   <h1 class="hero-title">
-    Senjata Digital Modern untuk UMKM <span class="highlight-gold">Naik Kelas</span> &amp; <span class="highlight-steel">Melesat Cepat.</span>
+    Kolaborasi Strategis Menuju Kemandirian Digital UMKM <span class="highlight-gold">Naik Kelas</span> &amp; <span class="highlight-steel">Melesat Cepat.</span>
   </h1>
 
+  <!-- Hero Subheadline -->
   <p class="hero-description">
-    Miliki website katalog pesanan WhatsApp, aplikasi kasir (POS), dan profil bisnis resmi tanpa biaya komisi platform, tanpa biaya tersembunyi, dan lengkap dengan pendampingan sampai tim Anda mahir.
+    Aksara Inovatif hadir sebagai mitra teknologi yang mendampingi pengusaha, komunitas, dan asosiasi bisnis membangun sistem penjualan mandiri. Bebas potongan komisi pihak ketiga, 100% hak milik usaha Anda, dan didampingi hingga tim Anda mahir.
   </p>
 
+  <!-- CTA Buttons -->
   <div class="hero-actions">
-    <a href="#kalkulator" class="btn-primary magnetic-btn" data-cursor="HITUNG">
-      <span>Hitung Estimasi Biaya Usaha Anda</span>
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    <a href="#kemitraan" class="btn-primary magnetic-btn" data-cursor="KOLABORASI">
+      <Handshake size={18} stroke-width={2.2} />
+      <span>Jelajahi Skema Kemitraan Mitra</span>
+      <ArrowRight size={18} stroke-width={2.2} />
     </a>
-    <a href="#showroom" class="btn-secondary magnetic-btn" data-cursor="JELAJAH">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-      <span>Uji Coba Demo Sistem</span>
+    <a href="#showroom" class="btn-secondary magnetic-btn" data-cursor="DEMO">
+      <Play size={16} fill="currentColor" stroke-width={0} />
+      <span>Lihat Live Demo Sistem</span>
     </a>
   </div>
 
-  <div class="hero-stats">
-    <div class="stat-item">
-      <div class="stat-number">100%</div>
-      <div class="stat-label">Kepemilikan Penuh (Bebas Komisi Fee)</div>
+  <!-- Live Dashboard Showcase (Mayar.id Style Preview) -->
+  <div class="hero-mockup-wrapper">
+    <div class="mockup-header-bar">
+      <div class="mockup-dots">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="mockup-url-pill">app.aksarainovatif.id/mitra-portal</div>
+      <span class="brand-tag">● Status Kemitraan Aktif</span>
     </div>
-    <div class="stat-item">
-      <div class="stat-number">&lt; 1 Detik</div>
-      <div class="stat-label">Kecepatan Buka di HP Konsumen</div>
+
+    <div class="mockup-body-grid">
+      <!-- Mini Sidebar -->
+      <div class="mockup-sidebar-clean">
+        <div class="sidebar-profile">
+          <div style="width:42px; height:42px; border-radius:10px; overflow:hidden; background:var(--bg-card); display:flex; align-items:center; justify-content:center; border:1px solid var(--border-warm);">
+            <img src="/assets/Logo-Asaja.png" alt="Logo Aksara" style="width:100%; height:100%; object-fit:contain;" />
+          </div>
+          <div>
+            <div style="font-size:13px; font-weight:700; color:var(--navy-deep);">Kopi Karsa Rasa</div>
+            <div style="font-size:11px; color:var(--text-muted);">Mitra Resmi — Aksara Binaan</div>
+          </div>
+        </div>
+
+        <div class="sidebar-nav-item active">
+          <span style="display:inline-flex; align-items:center; gap:8px;">
+            <TrendingUp size={15} />
+            <span>Pertumbuhan Omzet</span>
+          </span>
+          <ArrowRight size={13} />
+        </div>
+        <div class="sidebar-nav-item">
+          <span style="display:inline-flex; align-items:center; gap:8px;">
+            <ShoppingBag size={15} />
+            <span>Katalog WhatsApp Mandiri</span>
+          </span>
+          <span style="font-size:11px; color:var(--wa-green); font-weight:700;">Aktif</span>
+        </div>
+        <div class="sidebar-nav-item">
+          <span style="display:inline-flex; align-items:center; gap:8px;">
+            <Receipt size={15} />
+            <span>Kasir Thermal POS Toko</span>
+          </span>
+          <span style="font-size:11px; color:var(--steel-primary); font-weight:700;">Terhubung</span>
+        </div>
+        <div class="sidebar-nav-item">
+          <span style="display:inline-flex; align-items:center; gap:8px;">
+            <Users size={15} />
+            <span>Database Pelanggan</span>
+          </span>
+          <span style="font-size:11px; color:var(--text-muted);">100% Mandiri</span>
+        </div>
+      </div>
+
+      <!-- Main Dashboard Area -->
+      <div class="mockup-main-dashboard">
+        <div class="stats-row">
+          <div class="stat-card-clean">
+            <div class="stat-card-label">Volume Transaksi Mitra</div>
+            <div class="stat-card-value">Rp 4.850.000</div>
+            <div class="stat-card-badge" style="display:inline-flex; align-items:center; gap:4px;">
+              <TrendingUp size={13} />
+              <span>+24% omzet penjualan mandiri</span>
+            </div>
+          </div>
+          <div class="stat-card-clean">
+            <div class="stat-card-label">Order Masuk Hari Ini</div>
+            <div class="stat-card-value">52 Nota</div>
+            <div class="stat-card-badge" style="display:inline-flex; align-items:center; gap:4px;">
+              <CheckCircle2 size={13} />
+              <span>Format pesan terstruktur otomatis</span>
+            </div>
+          </div>
+          <div class="stat-card-clean">
+            <div class="stat-card-label">Efisiensi Biaya Komisi</div>
+            <div class="stat-card-value" style="color:var(--gold-dark);">Rp 970.000</div>
+            <div style="font-size:11px; color:var(--text-muted); margin-top:6px;">Hemat 100% biaya potongan perantara</div>
+          </div>
+        </div>
+
+        <!-- Recent Order Strip -->
+        <div class="recent-orders-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="font-size:13px; font-weight:700; color:var(--navy-deep); display:inline-flex; align-items:center; gap:6px;">
+              <Sparkles size={14} color="var(--gold-primary)" />
+              <span>Aktivitas Pemesanan Pelanggan Mitra</span>
+            </div>
+            <span style="font-size:11px; background:var(--wa-light); color:var(--wa-green); font-weight:700; padding:2px 8px; border-radius:12px;">Real-Time</span>
+          </div>
+
+          <div class="order-row">
+            <div>
+              <strong>#ORD-1082</strong> &bull; Bpk. Rian (Surabaya) &bull; <em>Paket Kopi Botol 1L + Croissant</em>
+            </div>
+            <div style="font-weight:700; color:var(--navy-deep);">
+              Rp 125.000 <span style="color:var(--wa-green); font-size:11px;">[WhatsApp Checkout Langsung]</span>
+            </div>
+          </div>
+
+          <div class="order-row">
+            <div>
+              <strong>#ORD-1081</strong> &bull; Ibu Maya &bull; <em>3x Rice Bowl Daging Balado</em>
+            </div>
+            <div style="font-weight:700; color:var(--navy-deep);">
+              Rp 105.000 <span style="color:var(--steel-primary); font-size:11px;">[POS Kasir Toko]</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="stat-item">
-      <div class="stat-number">3-7 Hari</div>
-      <div class="stat-label">Sistem Siap Digunakan Jualan</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">24/7</div>
-      <div class="stat-label">Dukungan &amp; Garansi Maintenance</div>
+  </div>
+
+  <!-- Social Proof Trust Strip -->
+  <div class="social-proof-strip">
+    <div class="social-proof-label">Telah Mendukung Pertumbuhan Kemitraan Berbagai Sektor Usaha</div>
+    <div class="proof-tags">
+      <div class="proof-tag-item">
+        <UtensilsCrossed size={15} color="var(--steel-primary)" />
+        <span>F&amp;B, Cafe &amp; Restoran</span>
+      </div>
+      <div class="proof-tag-item">
+        <Shirt size={15} color="var(--gold-dark)" />
+        <span>Butik, Fashion &amp; Hijab</span>
+      </div>
+      <div class="proof-tag-item">
+        <Store size={15} color="var(--steel-primary)" />
+        <span>Toko Kelontong &amp; Retail</span>
+      </div>
+      <div class="proof-tag-item">
+        <Wrench size={15} color="var(--gold-dark)" />
+        <span>Bengkel, Salon &amp; Jasa</span>
+      </div>
+      <div class="proof-tag-item">
+        <Truck size={15} color="var(--steel-primary)" />
+        <span>Supplier &amp; Distributor Lokal</span>
+      </div>
     </div>
   </div>
 </section>

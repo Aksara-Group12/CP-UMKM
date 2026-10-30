@@ -1,0 +1,145 @@
+---
+// Comparison.astro
+import { Check, X, ShieldCheck, Sparkles } from 'lucide-astro';
+---
+
+<section id="perbandingan" class="section container">
+  <div class="section-header">
+    <div class="section-tag">Transparansi &amp; Efisiensi</div>
+    <h2 class="section-title">Kenapa Memilih Aksara Dibanding Platform Lain?</h2>
+    <p class="section-description">
+      Bandingkan langsung keuntungan memiliki sistem mandiri vs terus-menerus membayar komisi potongan platform pihak ketiga.
+    </p>
+  </div>
+
+  <div class="comparison-card">
+    <div style="overflow-x:auto;">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th style="width: 32%;">Fitur &amp; Model Bisnis</th>
+            <th class="aksara-col" style="width: 36%;">
+              <span style="display:inline-flex; align-items:center; gap:6px;">
+                <Sparkles size={16} color="var(--gold-primary)" />
+                <span>Ekosistem Aksara Inovatif</span>
+              </span>
+            </th>
+            <th style="width: 32%;">Aplikasi / Marketplace Lain</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Biaya Komisi Penjualan</strong></td>
+            <td class="aksara-col">
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:var(--wa-light); color:var(--wa-green); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <Check size={13} stroke-width={3} />
+                </div>
+                <div>
+                  <strong>0% (Bebas Biaya Selamanya)</strong><br>
+                  <small style="color:var(--text-muted);">Keuntungan omzet 100% masuk ke rekening Anda.</small>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:#fee2e2; color:#ef4444; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <X size={13} stroke-width={3} />
+                </div>
+                <div>Potongan 10% s.d. 20% tiap kali ada transaksi masuk.</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Kepemilikan Sistem &amp; Domain</strong></td>
+            <td class="aksara-col">
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:var(--wa-light); color:var(--wa-green); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <Check size={13} stroke-width={3} />
+                </div>
+                <div>
+                  <strong>100% Hak Milik Usaha Anda</strong><br>
+                  <small style="color:var(--text-muted);">Domain atas nama brand Anda sendiri (.com/.id).</small>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:#fee2e2; color:#ef4444; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <X size={13} stroke-width={3} />
+                </div>
+                <div>Sistem sewa, toko ditutup jika tidak bayar iuran bulanan.</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Database Pelanggan</strong></td>
+            <td class="aksara-col">
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:var(--wa-light); color:var(--wa-green); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <Check size={13} stroke-width={3} />
+                </div>
+                <div>
+                  <strong>Milik Anda Sepenuhnya</strong><br>
+                  <small style="color:var(--text-muted);">Nomor WhatsApp pelanggan langsung tersimpan di HP kasir.</small>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:#fee2e2; color:#ef4444; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <X size={13} stroke-width={3} />
+                </div>
+                <div>Terkunci di platform pihak ketiga, tidak bisa di-broadcast langsung.</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Kecepatan Akses Website</strong></td>
+            <td class="aksara-col">
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:var(--wa-light); color:var(--wa-green); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <Check size={13} stroke-width={3} />
+                </div>
+                <div>
+                  <strong>&lt; 1 Detik di HP (Astro SSG)</strong><br>
+                  <small style="color:var(--text-muted);">Sangat ringan dibuka meski di jaringan 3G/4G.</small>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:#fef3c7; color:#d97706; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <X size={13} stroke-width={3} />
+                </div>
+                <div>Sering lambat &amp; berat karena banyak script tracking iklan.</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Pendampingan &amp; Garansi</strong></td>
+            <td class="aksara-col">
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:var(--wa-light); color:var(--wa-green); display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <Check size={13} stroke-width={3} />
+                </div>
+                <div>
+                  <strong>Didampingi Sampai Mahir</strong><br>
+                  <small style="color:var(--text-muted);">Termasuk video tutorial &amp; garansi teknis 24/7.</small>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div style="display:flex; align-items:flex-start; gap:8px;">
+                <div style="width:20px; height:20px; border-radius:50%; background:#fee2e2; color:#ef4444; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px;">
+                  <X size={13} stroke-width={3} />
+                </div>
+                <div>Setting sendiri mandiri tanpa panduan staf khusus.</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

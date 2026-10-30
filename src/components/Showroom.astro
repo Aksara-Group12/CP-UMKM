@@ -1,19 +1,32 @@
 ---
 // Showroom.astro
+import { ShoppingBag, Receipt, Globe, Check, ArrowRight } from 'lucide-astro';
 ---
 
 <section id="showroom" class="section container">
   <div class="section-header">
     <div class="section-tag">Showroom Interaktif</div>
-    <h2 class="section-title">Solusi yang Dirancang Khusus untuk Alur Kerja Bisnis Nyata Anda</h2>
+    <h2 class="section-title">Fitur Nyata yang Dirancang Sesuai Kebutuhan Operasional UMKM</h2>
+    <p class="section-description">
+      Jelajahi simulasi langsung sistem kami. Dirancang ramah pengguna, ringan dibuka di smartphone, dan tanpa kerumitan teknis.
+    </p>
   </div>
 
   <div class="showcase-container">
-    <!-- Interactive Tabs -->
+    <!-- Interactive Tabs (Shadcn/UI Styled with Lucide Icons) -->
     <div class="showcase-tabs">
-      <button class="tab-btn active magnetic-btn" data-tab="katalog" data-cursor="PILIH">🛍️ Katalog WhatsApp</button>
-      <button class="tab-btn magnetic-btn" data-tab="kasir" data-cursor="PILIH">📊 Kasir &amp; Stok POS</button>
-      <button class="tab-btn magnetic-btn" data-tab="compro" data-cursor="PILIH">🌐 Company Profile Resmi</button>
+      <button class="tab-btn active magnetic-btn" data-tab="katalog" data-cursor="PILIH" style="display:inline-flex; align-items:center; gap:8px;">
+        <ShoppingBag size={16} />
+        <span>Katalog &amp; Order WhatsApp</span>
+      </button>
+      <button class="tab-btn magnetic-btn" data-tab="kasir" data-cursor="PILIH" style="display:inline-flex; align-items:center; gap:8px;">
+        <Receipt size={16} />
+        <span>Aplikasi Kasir (POS) Cloud</span>
+      </button>
+      <button class="tab-btn magnetic-btn" data-tab="compro" data-cursor="PILIH" style="display:inline-flex; align-items:center; gap:8px;">
+        <Globe size={16} />
+        <span>Company Profile &amp; SEO Lokal</span>
+      </button>
     </div>
 
     <div class="showcase-grid">
@@ -25,24 +38,33 @@
         </p>
         <ul class="feature-bullets" id="showcase-bullets">
           <li>
-            <span class="bullet-icon">✓</span>
-            <span>Load instan &lt; 1 detik di koneksi 4G/3G ponsel</span>
+            <span class="bullet-icon">
+              <Check size={13} stroke-width={3} />
+            </span>
+            <span>Load instan &lt; 1 detik di koneksi 4G/3G ponsel pelanggan</span>
           </li>
           <li>
-            <span class="bullet-icon">✓</span>
-            <span>Integrasi tombol pesan WhatsApp langsung dengan rincian order</span>
+            <span class="bullet-icon">
+              <Check size={13} stroke-width={3} />
+            </span>
+            <span>Integrasi tombol pesan WhatsApp langsung dengan rincian nota siap proses</span>
           </li>
           <li>
-            <span class="bullet-icon">✓</span>
-            <span>Manajemen varian produk &amp; stok mudah lewat HP</span>
+            <span class="bullet-icon">
+              <Check size={13} stroke-width={3} />
+            </span>
+            <span>Manajemen varian produk &amp; stok mudah diupdate lewat HP</span>
           </li>
           <li>
-            <span class="bullet-icon">✓</span>
-            <span>Tanpa biaya komisi penjualan sepeser pun</span>
+            <span class="bullet-icon">
+              <Check size={13} stroke-width={3} />
+            </span>
+            <span>Tanpa potongan komisi penjualan 10% - 20% sepeser pun</span>
           </li>
         </ul>
-        <a href="https://wa.me/6281234567890?text=Halo%20Aksara,%20saya%20tertarik%20dengan%20sistem%20Katalog%20WhatsApp" class="btn-primary magnetic-btn" data-cursor="TANYA WA">
+        <a href="https://wa.me/6281234567890?text=Halo%20Aksara,%20saya%20tertarik%20dengan%20sistem%20Katalog%20WhatsApp" class="btn-primary magnetic-btn" data-cursor="KONSULTASI">
           <span>Konsultasi Solusi Ini</span>
+          <ArrowRight size={16} />
         </a>
       </div>
 
@@ -57,19 +79,19 @@
         </div>
 
         <div class="mockup-content">
-          <div style="font-size:12px; color:#cfa86e; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px;" id="mockup-card-title">
+          <div style="font-size:12px; color:var(--gold-dark); font-weight:700; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:12px;" id="mockup-card-title">
             Katalog Kuliner &amp; Retail UMKM
           </div>
           <div id="mockup-dynamic-content">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
-              <span style="font-weight:700; color:#faebd2;">Kopi Susu Gula Aren (1 Liter)</span>
-              <span style="color:#cfa86e; font-weight:800;">Rp 75.000</span>
+              <span style="font-weight:700; color:var(--navy-deep); font-size:16px;">Kopi Susu Gula Aren (1 Liter)</span>
+              <span style="color:var(--gold-dark); font-weight:800; font-size:16px;">Rp 75.000</span>
             </div>
-            <div style="background:#0e2742; border:1px solid #3b74a3; border-radius:12px; padding:12px; margin-bottom:14px; font-size:13px; color:#95acc0;">
-              ⚡ Pilihan Varian: Less Sugar • Normal Ice
+            <div style="background:var(--bg-main); border:1px solid var(--border-warm); border-radius:12px; padding:14px; margin-bottom:16px; font-size:13px; color:var(--text-body);">
+              <strong>Pilihan Varian:</strong> Less Sugar &bull; Normal Ice &bull; Extra Shot (+Rp 5.000)
             </div>
-            <div style="background:linear-gradient(135deg, #10b981, #059669); color:#fff; border-radius:10px; padding:12px; text-align:center; font-weight:700; font-size:13px;">
-              💬 Kirim Rincian Pesanan ke WhatsApp Penjual
+            <div style="background:linear-gradient(135deg, #10b981, #059669); color:#fff; border-radius:12px; padding:14px; text-align:center; font-weight:700; font-size:14px; box-shadow:0 4px 14px rgba(16,185,129,0.25);">
+              Kirim Rincian Pesanan ke WhatsApp Penjual
             </div>
           </div>
         </div>

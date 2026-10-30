@@ -5,8 +5,8 @@ interface Props {
 }
 
 const { 
-  title = "Aksara Inovatif — Software House & Solusi Digital Khusus UMKM",
-  description = "Software house modern khusus UMKM. Pembuatan Website Katalog WhatsApp, Aplikasi Kasir (POS), dan Company Profile berkecepatan tinggi dengan harga transparan dan garansi pendampingan."
+  title = "Aksara Inovatif — Solusi Digital Modern, Cepat & Bebas Komisi untuk UMKM",
+  description = "Solusi rekayasa digital khusus UMKM Indonesia. Pembuatan Website Katalog Order WhatsApp, Aplikasi Kasir (POS) Cloud, dan Company Profile dengan harga transparan, 100% hak milik, dan pendampingan sampai mahir."
 } = Astro.props;
 
 import '../style.css';
@@ -19,11 +19,17 @@ import '../style.css';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content={description}>
+  <meta name="theme-color" content="#fbf5eb">
   
-  <!-- Modern Typography (Plus Jakarta Sans) -->
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  
+  <!-- Mayar-identical Typography (Inter by Rasmus Andersson) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <slot />
