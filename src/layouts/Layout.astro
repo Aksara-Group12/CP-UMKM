@@ -1,0 +1,34 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Aksara Inovatif — Software House & Solusi Digital Khusus UMKM",
+  description = "Software house modern khusus UMKM. Pembuatan Website Katalog WhatsApp, Aplikasi Kasir (POS), dan Company Profile berkecepatan tinggi dengan harga transparan dan garansi pendampingan."
+} = Astro.props;
+
+import '../style.css';
+---
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  
+  <!-- Modern Typography (Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <slot />
+
+  <!-- Client-side Interaction Script -->
+  <script src="../main.js"></script>
+</body>
+</html>

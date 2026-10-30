@@ -1,0 +1,61 @@
+---
+// Calculator.astro
+---
+
+<section id="kalkulator" class="section container">
+  <div class="section-header">
+    <div class="section-tag">Transparansi Investasi</div>
+    <h2 class="section-title">Kalkulator Estimasi Biaya &amp; Paket Solusi</h2>
+  </div>
+
+  <div class="calc-card">
+    <div class="calc-grid">
+      <div>
+        <div class="calc-group">
+          <label class="calc-label">1. Pilih Kategori Solusi Bisnis</label>
+          <div class="calc-chips">
+            <button class="chip-btn chip-type active magnetic-btn" data-value="katalog">Katalog WA Order</button>
+            <button class="chip-btn chip-type magnetic-btn" data-value="kasir">Aplikasi Kasir POS</button>
+            <button class="chip-btn chip-type magnetic-btn" data-value="compro">Company Profile</button>
+            <button class="chip-btn chip-type magnetic-btn" data-value="custom">Sistem Kustom</button>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <label class="calc-label">2. Fitur Tambahan &amp; Fasilitas Pendukung</label>
+          <div class="calc-chips">
+            <button class="chip-btn chip-addon active magnetic-btn" data-value="wa">Integrasi WhatsApp (Gratis)</button>
+            <button class="chip-btn chip-addon active magnetic-btn" data-value="domain">Domain .COM + Hosting 1 Thn (+350rb)</button>
+            <button class="chip-btn chip-addon magnetic-btn" data-value="seo">Google Maps &amp; SEO Lokal (+400rb)</button>
+            <button class="chip-btn chip-addon magnetic-btn" data-value="training">Bimbingan &amp; Video Staf (+250rb)</button>
+          </div>
+        </div>
+
+        <p style="color:var(--text-dim); font-size:13px; line-height:1.5;">
+          ℹ️ Harga transparan di awal, sistem menjadi hak milik penuh tanpa biaya bulanan tersembunyi.
+        </p>
+      </div>
+
+      <!-- Summary Box -->
+      <div class="calc-summary">
+        <div>
+          <div class="summary-price-label">Estimasi Total Investasi</div>
+          <div class="summary-price-val" id="calc-total">Rp 1.800.000</div>
+
+          <div style="font-size:12px; color:var(--gold-accent); margin-bottom:12px; font-weight:700;">
+            ⏱️ Waktu Pengerjaan: <span id="calc-timeline" style="color:#fff;">3-5 Hari Kerja</span>
+          </div>
+
+          <ul class="summary-features" id="calc-features-list">
+            <!-- Populated dynamically via main.js -->
+          </ul>
+        </div>
+
+        <a href="#" id="calc-wa-btn" target="_blank" class="btn-primary magnetic-btn" style="width:100%;" data-cursor="KIRIM WA">
+          <span>Konsultasi Paket Ini di WA</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
