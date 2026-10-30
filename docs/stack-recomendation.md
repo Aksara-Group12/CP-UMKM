@@ -44,7 +44,8 @@ Dokumen ini merangkum arsitektur teknologi yang direkomendasikan untuk membangun
 ### E. Media: Video Terkompresi & WebGL Ringan
 * **Implementasi:**
   * Gunakan format video modern (`WebM` / `MP4` terkompresi) untuk kartu portofolio animasi.
-  * Efek cairan atau distorsi gelombang menggunakan WebGL shader ringan hanya pada canvas tertentu.
+  * Efek cairan atau distorsi gelombang menggunakan WebGL shader ringan 
+  hanya pada canvas tertentu.
 
 ### F. Hosting & Infrastruktur: Vercel Edge
 * **Implementasi:**
