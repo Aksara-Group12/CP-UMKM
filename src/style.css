@@ -284,6 +284,10 @@ body::before {
   transition: transform 0.35s var(--ease-cuberto);
 }
 
+.rolling-text span:last-child {
+  color: var(--gold-dark);
+}
+
 .rolling-text:hover span {
   transform: translateY(-20px);
 }
@@ -1403,8 +1407,8 @@ body::before {
 
 .footer-top {
   display: grid;
-  grid-template-columns: 1.5fr repeat(3, 1fr);
-  gap: 48px;
+  grid-template-columns: 1.3fr 0.95fr 1fr 1.35fr;
+  gap: 36px;
   margin-bottom: 48px;
 }
 
@@ -1441,6 +1445,38 @@ body::before {
 
 .footer-links a:hover {
   color: var(--navy-deep);
+}
+
+/* Polished Footer Contact Column */
+.contact-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-body);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: var(--navy-deep);
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.contact-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.contact-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
 }
 
 .footer-bottom {

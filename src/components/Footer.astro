@@ -63,22 +63,25 @@ import { ArrowRight, MessageSquare, Mail, MapPin, Handshake } from 'lucide-astro
         <h5>Kontak Kemitraan</h5>
         <ul class="footer-links">
           <li>
-            <a href="https://wa.me/628131355613" target="_blank" style="display:inline-flex; align-items:center; gap:8px;">
-              <MessageSquare size={14} color="var(--wa-green)" />
-              <span>WhatsApp: +62 813-1355-613</span>
+            <a href="https://wa.me/628131355613" target="_blank" class="contact-link">
+              <MessageSquare size={16} color="var(--wa-green)" class="contact-icon" />
+              <span class="contact-text">+62 813-1355-613</span>
             </a>
           </li>
           <li>
-            <a href="mailto:aksaradeveloper2026@gmail.com" style="display:inline-flex; align-items:center; gap:8px;">
-              <Mail size={14} color="var(--steel-primary)" />
-              <span>Email: aksaradeveloper2026@gmail.com</span>
+            <a href="mailto:aksaradeveloper2026@gmail.com" class="contact-link">
+              <Mail size={16} color="var(--steel-primary)" class="contact-icon" />
+              <span class="contact-text">aksaradeveloper2026@gmail.com</span>
             </a>
           </li>
           <li>
-            <span style="color:var(--text-body); font-size:14px; display:inline-flex; align-items:center; gap:8px;">
-              <MapPin size={14} color="var(--gold-dark)" />
-              <span>Jember, Jawa Timur &bull; Melayani Seluruh Indonesia</span>
-            </span>
+            <div class="contact-link">
+              <MapPin size={16} color="var(--gold-dark)" class="contact-icon" />
+              <div class="contact-text">
+                <div>Jember, Jawa Timur</div>
+                <div class="contact-note">Melayani Seluruh Indonesia</div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
