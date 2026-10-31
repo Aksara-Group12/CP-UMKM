@@ -1,6 +1,6 @@
 ---
 // BentoServices.astro
-import { ShoppingBag, Receipt, Globe, Settings2 } from 'lucide-astro';
+import { ShoppingBag, Receipt, Globe, Settings2, Check } from 'lucide-astro';
 ---
 
 <section id="solusi" class="section container">
@@ -8,65 +8,125 @@ import { ShoppingBag, Receipt, Globe, Settings2 } from 'lucide-astro';
     <div class="section-tag">Layanan Ekosistem UMKM</div>
     <h2 class="section-title">Pilar Transformasi Digital Mandiri Tanpa Biaya Tersembunyi</h2>
     <p class="section-description">
-      Solusi modular terintegrasi yang dirancang untuk mengatasi hambatan operasional dan mempercepat perputaran omzet usaha Anda.
+      Empat fondasi teknologi terpadu yang dirancang untuk mengatasi hambatan operasional dan mempercepat perputaran omzet usaha Anda.
     </p>
   </div>
 
   <div class="bento-grid">
-    <!-- Card 1 (Span 8) -->
-    <div class="bento-card bento-col-8" data-cursor="JELAJAH">
-      <div class="bento-card-header">
-        <span class="bento-badge">Unggulan F&amp;B &amp; Retail</span>
-        <div class="bento-icon">
-          <ShoppingBag size={24} stroke-width={2} />
-        </div>
-      </div>
+    <!-- Card 1 -->
+    <div class="bento-card">
       <div>
-        <h4>Toko Online &amp; Katalog Order WhatsApp Mandiri</h4>
-        <p>Pangkas komisi 10%–20% dari marketplace atau aplikasi ojek online. Pelanggan memesan langsung dari katalog website berkecepatan tinggi, dan pesanan otomatis masuk ke aplikasi WhatsApp kasir Anda dalam format nota terstruktur siap kirim.</p>
+        <div class="bento-card-top">
+          <span class="bento-index">01 / SISTEM PEMESANAN</span>
+          <div class="bento-icon-clean">
+            <ShoppingBag size={20} stroke-width={2} />
+          </div>
+        </div>
+        <h4>Katalog Digital &amp; Checkout WhatsApp Mandiri</h4>
+        <p>Pangkas potongan 10%–20% dari marketplace atau aplikasi ojek online. Pelanggan memesan langsung dari katalog website berkecepatan tinggi, dan pesanan otomatis masuk ke aplikasi WhatsApp kasir Anda dalam format nota terstruktur siap kirim.</p>
       </div>
+
+      <ul class="bento-feature-list">
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Pemesanan instan di HP tanpa unduh aplikasi</span>
+        </li>
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Perhitungan varian produk &amp; ongkir otomatis</span>
+        </li>
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>100% tanpa potongan biaya transaksi (margin utuh)</span>
+        </li>
+      </ul>
     </div>
 
-    <!-- Card 2 (Span 4) -->
-    <div class="bento-card bento-col-4" data-cursor="JELAJAH">
-      <div class="bento-card-header">
-        <span class="bento-badge">Operasional Toko</span>
-        <div class="bento-icon">
-          <Receipt size={24} stroke-width={2} />
-        </div>
-      </div>
+    <!-- Card 2 -->
+    <div class="bento-card">
       <div>
-        <h4>POS Kasir &amp; Laporan Omzet Cloud</h4>
-        <p>Cetak struk thermal bluetooth, kontrol stok gudang per cabang, dan pantau omzet harian langsung dari smartphone atau tablet kasir Anda.</p>
+        <div class="bento-card-top">
+          <span class="bento-index">02 / SISTEM KASIR</span>
+          <div class="bento-icon-clean">
+            <Receipt size={20} stroke-width={2} />
+          </div>
+        </div>
+        <h4>Aplikasi Kasir (POS) Cloud &amp; Cetak Thermal</h4>
+        <p>Tinggalkan catatan buku bon manual dan selisih stok yang menyita waktu. Sistem kasir ringan berbasis cloud yang mencatat transaksi harian, mengontrol stok gudang, dan otomatis terhubung ke printer thermal Bluetooth.</p>
       </div>
+
+      <ul class="bento-feature-list">
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Cetak struk via printer thermal Bluetooth</span>
+        </li>
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Bisa dibuka dari smartphone, tablet, atau iPad yang ada</span>
+        </li>
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Rekap omzet harian otomatis per kasir &amp; per shift</span>
+        </li>
+      </ul>
     </div>
 
-    <!-- Card 3 (Span 4) -->
-    <div class="bento-card bento-col-4" data-cursor="JELAJAH">
-      <div class="bento-card-header">
-        <span class="bento-badge">Kredibilitas Bisnis</span>
-        <div class="bento-icon">
-          <Globe size={24} stroke-width={2} />
-        </div>
-      </div>
+    <!-- Card 3 -->
+    <div class="bento-card">
       <div>
-        <h4>Company Profile Resmi &amp; Local SEO</h4>
-        <p>Bantu calon pelanggan dan mitra korporat menemukan bisnis Anda saat mencari produk/jasa di Google Maps dan Google Search kota Anda.</p>
+        <div class="bento-card-top">
+          <span class="bento-index">03 / KREDIBILITAS &amp; SEO</span>
+          <div class="bento-icon-clean">
+            <Globe size={20} stroke-width={2} />
+          </div>
+        </div>
+        <h4>Company Profile Resmi &amp; Optimasi Local SEO</h4>
+        <p>Mudahkan calon pembeli dan mitra korporat menemukan bisnis Anda saat mencari produk atau jasa di Google Search dan Google Maps kota Anda, lengkap dengan verifikasi legalitas dan portofolio resmi.</p>
       </div>
+
+      <ul class="bento-feature-list">
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Terdaftar di Google Search &amp; Google Maps lokal</span>
+        </li>
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Termasuk domain resmi (.com/.id) &amp; sertifikat SSL aman</span>
+        </li>
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Tampilan profesional untuk tender B2B &amp; instansi</span>
+        </li>
+      </ul>
     </div>
 
-    <!-- Card 4 (Span 8) -->
-    <div class="bento-card bento-col-8" data-cursor="JELAJAH">
-      <div class="bento-card-header">
-        <span class="bento-badge">Solusi Kustom</span>
-        <div class="bento-icon">
-          <Settings2 size={24} stroke-width={2} />
-        </div>
-      </div>
+    <!-- Card 4 -->
+    <div class="bento-card">
       <div>
+        <div class="bento-card-top">
+          <span class="bento-index">04 / KUSTOMISASI ALUR</span>
+          <div class="bento-icon-clean">
+            <Settings2 size={20} stroke-width={2} />
+          </div>
+        </div>
         <h4>Sistem Operasional Kustom Sesuai SOP Bisnis</h4>
-        <p>Punya alur kerja unik di tempat produksi catering, sistem reservasi salon, atau servis bengkel kendaraan? Tim engineer Aksara merancang aplikasi web kustom yang pas dengan kebutuhan operasional spesifik tanpa ribet.</p>
+        <p>Punya alur kerja unik di tempat produksi catering, sistem antrean reservasi salon, atau servis bengkel kendaraan? Tim engineer Aksara merancang aplikasi web kustom yang pas dengan SOP operasional spesifik Anda.</p>
       </div>
+
+      <ul class="bento-feature-list">
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Dirancang tepat mengikuti kebutuhan SOP kerja nyata</span>
+        </li>
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Arsitektur modular yang siap dikembangkan kapan saja</span>
+        </li>
+        <li>
+          <span class="bento-check-bullet"><Check size={13} stroke-width={3} /></span>
+          <span>Integrasi database &amp; laporan internal usaha</span>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

@@ -5,32 +5,32 @@ import { ShoppingBag, Receipt, Globe, Check, ArrowRight } from 'lucide-astro';
 
 <section id="showroom" class="section container">
   <div class="section-header">
-    <div class="section-tag">Showroom Interaktif</div>
-    <h2 class="section-title">Fitur Nyata yang Dirancang Sesuai Kebutuhan Operasional UMKM</h2>
+    <div class="section-tag">Showroom Solusi</div>
+    <h2 class="section-title">Bagaimana Sistem Bekerja untuk Bisnis Anda</h2>
     <p class="section-description">
-      Jelajahi simulasi langsung sistem kami. Dirancang ramah pengguna, ringan dibuka di smartphone, dan tanpa kerumitan teknis.
+      Ringkasan alur operasional dan manfaat nyata dari setiap solusi digital mandiri Aksara Developer.
     </p>
   </div>
 
   <div class="showcase-container">
-    <!-- Interactive Tabs (Shadcn/UI Styled with Lucide Icons) -->
+    <!-- Interactive Tabs -->
     <div class="showcase-tabs">
-      <button class="tab-btn active magnetic-btn" data-tab="katalog" data-cursor="PILIH" style="display:inline-flex; align-items:center; gap:8px;">
+      <button class="tab-btn active" data-tab="katalog" style="display:inline-flex; align-items:center; gap:8px;">
         <ShoppingBag size={16} />
         <span>Katalog &amp; Order WhatsApp</span>
       </button>
-      <button class="tab-btn magnetic-btn" data-tab="kasir" data-cursor="PILIH" style="display:inline-flex; align-items:center; gap:8px;">
+      <button class="tab-btn" data-tab="kasir" style="display:inline-flex; align-items:center; gap:8px;">
         <Receipt size={16} />
         <span>Aplikasi Kasir (POS) Cloud</span>
       </button>
-      <button class="tab-btn magnetic-btn" data-tab="compro" data-cursor="PILIH" style="display:inline-flex; align-items:center; gap:8px;">
+      <button class="tab-btn" data-tab="compro" style="display:inline-flex; align-items:center; gap:8px;">
         <Globe size={16} />
         <span>Company Profile &amp; SEO Lokal</span>
       </button>
     </div>
 
     <div class="showcase-grid">
-      <!-- Text Info -->
+      <!-- Left Column: Overview & Deliverables -->
       <div class="showcase-info">
         <h3 id="showcase-title">Katalog Produk &amp; Checkout WhatsApp</h3>
         <p id="showcase-desc">
@@ -62,41 +62,46 @@ import { ShoppingBag, Receipt, Globe, Check, ArrowRight } from 'lucide-astro';
             <span>Tanpa potongan komisi penjualan 10% - 20% sepeser pun</span>
           </li>
         </ul>
-        <a href="https://wa.me/6281234567890?text=Halo%20Aksara,%20saya%20tertarik%20dengan%20sistem%20Katalog%20WhatsApp" class="btn-primary magnetic-btn" data-cursor="KONSULTASI">
+        <a id="showcase-cta" href="https://wa.me/6281234567890?text=Halo%20Aksara%20Developer,%20saya%20tertarik%20dengan%20sistem%20Katalog%20WhatsApp" target="_blank" class="btn-primary">
           <span>Konsultasi Solusi Ini</span>
           <ArrowRight size={16} />
         </a>
       </div>
 
-      <!-- Dynamic Mockup Preview -->
-      <div class="device-mockup" data-cursor="PREVIEW">
-        <div class="mockup-header">
-          <div class="mockup-dots">
-            <span></span><span></span><span></span>
+      <!-- Right Column: Concise Clean Text Explanation (No Dummy Mockup Card) -->
+      <div class="showcase-summary-card">
+        <div class="summary-card-header">
+          <span class="summary-card-label" id="summary-badge">Alur Operasional</span>
+          <span class="summary-target-label" id="summary-target">Pelanggan &rarr; Kasir WhatsApp</span>
+        </div>
+        
+        <div id="showcase-dynamic-steps" class="workflow-mini-list">
+          <div class="workflow-mini-item">
+            <div class="mini-step-badge">1</div>
+            <div>
+              <strong>Pelanggan Akses Link Langsung</strong>
+              <p>Membuka katalog dari link bio Instagram, TikTok, atau scan QR code meja tanpa install aplikasi.</p>
+            </div>
           </div>
-          <div class="mockup-url-pill">
-            <img src="/assets/Logo-Asaja.png" alt="Logo Aksara" class="mockup-url-favicon" />
-            <span class="mockup-title-bar" id="mockup-url">aksara-katalog-order.app</span>
+          <div class="workflow-mini-item">
+            <div class="mini-step-badge">2</div>
+            <div>
+              <strong>Pilih Varian &amp; Hitung Ongkir</strong>
+              <p>Pelanggan menentukan opsi rasa, ukuran, dan alamat pengiriman dengan kalkulasi total instan.</p>
+            </div>
           </div>
-          <div style="width: 42px;"></div>
+          <div class="workflow-mini-item">
+            <div class="mini-step-badge">3</div>
+            <div>
+              <strong>Format Pesanan Masuk ke WhatsApp</strong>
+              <p>Rincian order otomatis terformat rapi menjadi nota di WhatsApp toko, siap dikonfirmasi kasir.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="mockup-content">
-          <div style="font-size:12px; color:var(--gold-dark); font-weight:700; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:12px;" id="mockup-card-title">
-            Katalog Kuliner &amp; Retail UMKM
-          </div>
-          <div id="mockup-dynamic-content">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
-              <span style="font-weight:700; color:var(--navy-deep); font-size:16px;">Kopi Susu Gula Aren (1 Liter)</span>
-              <span style="color:var(--gold-dark); font-weight:800; font-size:16px;">Rp 75.000</span>
-            </div>
-            <div style="background:var(--bg-main); border:1px solid var(--border-warm); border-radius:12px; padding:14px; margin-bottom:16px; font-size:13px; color:var(--text-body);">
-              <strong>Pilihan Varian:</strong> Less Sugar &bull; Normal Ice &bull; Extra Shot (+Rp 5.000)
-            </div>
-            <div style="background:linear-gradient(135deg, #10b981, #059669); color:#fff; border-radius:12px; padding:14px; text-align:center; font-weight:700; font-size:14px; box-shadow:0 4px 14px rgba(16,185,129,0.25);">
-              Kirim Rincian Pesanan ke WhatsApp Penjual
-            </div>
-          </div>
+        <div class="summary-card-footer" id="showcase-dynamic-footer">
+          <div class="takeaway-badge">Kedaulatan Bisnis</div>
+          <div class="takeaway-text">100% margin omzet masuk rekening toko &bull; Database kontak pembeli tersimpan mandiri.</div>
         </div>
       </div>
     </div>

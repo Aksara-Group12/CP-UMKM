@@ -1,4 +1,4 @@
-# Laporan Analisis Proyek: CP-UMKM (Aksara Inovatif)
+# Laporan Analisis Proyek: CP-UMKM (Aksara Developer)
 
 > **Dokumen Analisis Arsitektur, Implementasi, dan Rencana Pengembangan**  
 > Dibuat pada: 30 Oktober 2026  
@@ -8,7 +8,7 @@
 
 ## 1. Ringkasan Eksekutif (Executive Summary)
 
-**CP-UMKM** (*Company Profile UMKM*) adalah template landing page dan profil bisnis interaktif berkecepatan tinggi yang dikembangkan oleh **Aksara Developer** (berjenama *Aksara Inovatif*). Proyek ini ditujukan khusus untuk Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia guna membangun kehadiran digital profesional tanpa harus membayar komisi pihak ketiga (*zero platform fee*).
+**CP-UMKM** (*Company Profile UMKM*) adalah template landing page dan profil bisnis interaktif berkecepatan tinggi yang dikembangkan oleh **Aksara Developer**. Proyek ini ditujukan khusus untuk Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia guna membangun kehadiran digital profesional tanpa harus membayar komisi pihak ketiga (*zero platform fee*).
 
 Website ini memadukan estetika desain agensi kreatif kelas dunia (terinspirasi gaya *Cuberto* dengan tema *Dark Spartan & Antique Gold*) dengan fungsi bisnis riil UMKM, seperti:
 1. **Showroom Produk/Layanan Interaktif**
