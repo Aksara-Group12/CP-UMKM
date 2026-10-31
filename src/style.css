@@ -75,6 +75,7 @@ html {
   color: var(--text-dark);
   overflow-x: hidden;
   letter-spacing: -0.011em;
+  scroll-behavior: auto !important;
 }
 
 body {
@@ -1259,11 +1260,16 @@ body::before {
   border: 1px solid var(--border-warm);
   border-radius: var(--radius-md);
   overflow: hidden;
-  transition: all 0.2s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .faq-item:hover {
   border-color: var(--border-gold);
+}
+
+.faq-item.active {
+  border-color: var(--gold-primary);
+  box-shadow: 0 4px 16px rgba(9, 22, 40, 0.04);
 }
 
 .faq-trigger {
@@ -1281,6 +1287,7 @@ body::before {
   justify-content: space-between;
   gap: 16px;
   font-family: inherit;
+  transition: color 0.2s ease;
 }
 
 .faq-icon {
@@ -1289,7 +1296,26 @@ body::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s var(--ease-cuberto);
+  transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Butter-Smooth Accordion Expansion via CSS Grid */
+.faq-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.active .faq-collapse {
+  grid-template-rows: 1fr;
+}
+
+.faq-collapse-inner {
+  overflow: hidden;
 }
 
 .faq-content {
@@ -1297,15 +1323,14 @@ body::before {
   font-size: 15px;
   line-height: 1.65;
   color: var(--text-body);
-  display: none;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.3s ease 0.06s, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) 0.06s;
 }
 
 .faq-item.active .faq-content {
-  display: block;
-}
-
-.faq-item.active .faq-icon {
-  transform: rotate(180deg);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* =========================================

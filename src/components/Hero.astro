@@ -2,18 +2,11 @@
 // Hero.astro
 import { 
   ArrowRight, 
-  Play, 
-  TrendingUp, 
-  CheckCircle2, 
-  ShoppingBag, 
-  Receipt, 
-  Users, 
   UtensilsCrossed, 
   Shirt, 
   Store, 
   Wrench, 
   Truck,
-  Sparkles,
   Handshake
 } from 'lucide-astro';
 ---
@@ -31,129 +24,14 @@ import {
 
   <!-- CTA Buttons -->
   <div class="hero-actions">
-    <a href="#kemitraan" class="btn-primary magnetic-btn" data-cursor="KOLABORASI">
+    <a href="#kemitraan" class="btn-primary" data-cursor="KOLABORASI">
       <Handshake size={18} stroke-width={2.2} />
       <span>Jelajahi Skema Kemitraan Mitra</span>
       <ArrowRight size={18} stroke-width={2.2} />
     </a>
-    <a href="#showroom" class="btn-secondary magnetic-btn" data-cursor="DEMO">
-      <Play size={16} fill="currentColor" stroke-width={0} />
-      <span>Lihat Live Demo Sistem</span>
+    <a href="https://wa.me/628131355613?text=Halo%20Aksara%20Developer,%20saya%20ingin%20konsultasi%20program%20kemitraan%20dan%20solusi%20digital%20UMKM" target="_blank" rel="noopener" class="btn-secondary">
+      <span>Konsultasi Langsung via WhatsApp</span>
     </a>
-  </div>
-
-  <!-- Live Dashboard Showcase (Mayar.id Style Preview) -->
-  <div class="hero-mockup-wrapper">
-    <div class="mockup-header-bar">
-      <div class="mockup-dots">
-        <span></span><span></span><span></span>
-      </div>
-      <div class="mockup-url-pill">
-        <img src="/assets/Logo-Asaja.png" alt="Logo Aksara" class="mockup-url-favicon" />
-        <span>app.aksaradeveloper.id/mitra-portal</span>
-      </div>
-      <div style="width: 42px;"></div>
-    </div>
-
-    <div class="mockup-body-grid">
-      <!-- Mini Sidebar -->
-      <div class="mockup-sidebar-clean">
-        <div class="sidebar-profile">
-          <div style="width:42px; height:42px; border-radius:10px; overflow:hidden; background:var(--bg-card); display:flex; align-items:center; justify-content:center; border:1px solid var(--border-warm);">
-            <img src="/assets/Logo-Asaja.png" alt="Logo Aksara" style="width:100%; height:100%; object-fit:contain;" />
-          </div>
-          <div>
-            <div style="font-size:13px; font-weight:700; color:var(--navy-deep);">Kopi Karsa Rasa</div>
-            <div style="font-size:11px; color:var(--text-muted);">Mitra Resmi — Aksara Binaan</div>
-          </div>
-        </div>
-
-        <div class="sidebar-nav-item active">
-          <span style="display:inline-flex; align-items:center; gap:8px;">
-            <TrendingUp size={15} />
-            <span>Pertumbuhan Omzet</span>
-          </span>
-          <ArrowRight size={13} />
-        </div>
-        <div class="sidebar-nav-item">
-          <span style="display:inline-flex; align-items:center; gap:8px;">
-            <ShoppingBag size={15} />
-            <span>Katalog WhatsApp Mandiri</span>
-          </span>
-          <span style="font-size:11px; color:var(--wa-green); font-weight:700;">Aktif</span>
-        </div>
-        <div class="sidebar-nav-item">
-          <span style="display:inline-flex; align-items:center; gap:8px;">
-            <Receipt size={15} />
-            <span>Kasir Thermal POS Toko</span>
-          </span>
-          <span style="font-size:11px; color:var(--steel-primary); font-weight:700;">Terhubung</span>
-        </div>
-        <div class="sidebar-nav-item">
-          <span style="display:inline-flex; align-items:center; gap:8px;">
-            <Users size={15} />
-            <span>Database Pelanggan</span>
-          </span>
-          <span style="font-size:11px; color:var(--text-muted);">100% Mandiri</span>
-        </div>
-      </div>
-
-      <!-- Main Dashboard Area -->
-      <div class="mockup-main-dashboard">
-        <div class="stats-row">
-          <div class="stat-card-clean">
-            <div class="stat-card-label">Volume Transaksi Mitra</div>
-            <div class="stat-card-value">Rp 4.850.000</div>
-            <div class="stat-card-badge" style="display:inline-flex; align-items:center; gap:4px;">
-              <TrendingUp size={13} />
-              <span>+24% omzet penjualan mandiri</span>
-            </div>
-          </div>
-          <div class="stat-card-clean">
-            <div class="stat-card-label">Order Masuk Hari Ini</div>
-            <div class="stat-card-value">52 Nota</div>
-            <div class="stat-card-badge" style="display:inline-flex; align-items:center; gap:4px;">
-              <CheckCircle2 size={13} />
-              <span>Format pesan terstruktur otomatis</span>
-            </div>
-          </div>
-          <div class="stat-card-clean">
-            <div class="stat-card-label">Efisiensi Biaya Komisi</div>
-            <div class="stat-card-value" style="color:var(--gold-dark);">Rp 970.000</div>
-            <div style="font-size:11px; color:var(--text-muted); margin-top:6px;">Hemat 100% biaya potongan perantara</div>
-          </div>
-        </div>
-
-        <!-- Recent Order Strip -->
-        <div class="recent-orders-card">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <div style="font-size:13px; font-weight:700; color:var(--navy-deep); display:inline-flex; align-items:center; gap:6px;">
-              <Sparkles size={14} color="var(--gold-primary)" />
-              <span>Aktivitas Pemesanan Pelanggan Mitra</span>
-            </div>
-            <span style="font-size:11px; background:var(--wa-light); color:var(--wa-green); font-weight:700; padding:2px 8px; border-radius:12px;">Real-Time</span>
-          </div>
-
-          <div class="order-row">
-            <div>
-              <strong>#ORD-1082</strong> &bull; Bpk. Rian (Surabaya) &bull; <em>Paket Kopi Botol 1L + Croissant</em>
-            </div>
-            <div style="font-weight:700; color:var(--navy-deep);">
-              Rp 125.000 <span style="color:var(--wa-green); font-size:11px;">[WhatsApp Checkout Langsung]</span>
-            </div>
-          </div>
-
-          <div class="order-row">
-            <div>
-              <strong>#ORD-1081</strong> &bull; Ibu Maya &bull; <em>3x Rice Bowl Daging Balado</em>
-            </div>
-            <div style="font-weight:700; color:var(--navy-deep);">
-              Rp 105.000 <span style="color:var(--steel-primary); font-size:11px;">[POS Kasir Toko]</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- Social Proof Continuous Ticker (Bergerak menyambung dari kiri ke kanan) -->
